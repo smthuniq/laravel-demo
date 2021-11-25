@@ -11,6 +11,8 @@
 |
 */
 
+use App\User;
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('main', ['users' => User::take(10)->orderBy('name')->get()]);
 });
