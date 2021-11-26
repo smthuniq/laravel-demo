@@ -51,12 +51,14 @@ function onCommentsFilterInput(event) {
             rebuildCommentsBlock(xhr.response);
         } else {
             alert(errorMessage);
+            console.log('HTTP response with an unexpected response code');
         }
         commentsFilterIsLocked = false;
     };
               
     xhr.onerror = function() {
         alert(errorMessage);
+        console.log('A XMLHttpRequest internal error');
         commentsFilterIsLocked = false;
     };
 }
