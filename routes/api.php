@@ -20,7 +20,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::resource('users.comments', 'UserCommentController')->only([
     'index',
-]);
+])->middleware('user.id.type');
 Route::resource('comments', 'CommentController')->only([
     'index',
 ]);
