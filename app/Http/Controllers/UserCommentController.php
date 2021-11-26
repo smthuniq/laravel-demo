@@ -16,6 +16,8 @@ class UserCommentController extends Controller
     public function index(Request $request, $userId)
     {
         $userIdType = $request->query('user_id_type');
+        // use double url decoding to pass '/'
+        $userId = urldecode($userId);
         $comments = Comment::take(10)
             ->userFieldStartsWith($userId, $userIdType)->get();
         
