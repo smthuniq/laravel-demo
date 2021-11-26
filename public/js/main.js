@@ -27,11 +27,10 @@ function onCommentsFilterInput(event) {
         errorMessage = 'Internal error. Please try later';
 
     if (value) {
-        url = '/api/users/' + value + '/comments?user_id_type=name';
+        url = '/api/users/' + encodeURIComponent(value) + '/comments?user_id_type=name';
     } else {
         url = '/api/comments';
     }
-    url = encodeURI(url);
 
     xhr.open('GET', url);
     xhr.responseType = 'json';
