@@ -15,8 +15,7 @@ class CommentController extends Controller
      */
     public function index()
     {
-        $comments = Comment::with('user:id,name')
-            ->select('id', 'user_id', 'content')->take(10)->get();
+        $comments = Comment::take(10)->get();
         if (!count($comments)) {
             return response()->json($comments, 404);
         }

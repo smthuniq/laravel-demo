@@ -16,19 +16,8 @@ class UserCommentController extends Controller
     public function index(Request $request, $userId)
     {
         $userIdType = $request->query('user_id_type');
-        $allowedIdTypes = [
-            'name',
-        ];
-
-        $commentsQuery = Comment::with('user:id,name')->take(10);
-        // it allows e.g. to search comments by user name or another allowed column
-        if (in_array($userIdType, $allowedIdTypes, true)) {
-            $commentsQuery = $commentsQuery
-            ->whereHas('user', function ($query) use ($userId, $userIdType) {
-                $query->where($userIdType, 'LIKE', "$userId%");
-            });
-        }
-        $comments = $commentsQuery->get(['id', 'user_id', 'content']);
+        $comments = Comment::take(10)
+            ->userFieldStartsWith($userId, $userIdType)->get();
         
         if (!count($comments)) {
             return response()->json($comments, 404);
