@@ -19,7 +19,7 @@
         <div class="comments-block">
             <form class="filter" name="comments-filter">
                 <div class="circle"></div>
-                <input name="by-name" type="text" placeholder="filter by name">
+                <input name="by-name" type="text" placeholder="filter by name" maxlength="100">
                 <div class="circle"></div>
             </form>
             <div class="comments">
