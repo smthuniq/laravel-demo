@@ -11,8 +11,8 @@
 |
 */
 
-use App\User;
+use App\Comment;
 
 Route::get('/', function () {
-    return view('main', ['users' => User::take(10)->get()]);
+    return view('main', ['comments' => Comment::take(10)->get()]);
 });

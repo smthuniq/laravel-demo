@@ -23,13 +23,11 @@
                 <div class="circle"></div>
             </form>
             <div class="comments">
-                @foreach ($users as $user)
-                    @foreach ($user->comments as $comment)
-                        <div class="comment" data-id="{{ $comment->id }}">
-                            <span class="author">{{ $user->name }} : :&nbsp;</span>
-                            <span class="content">{{ $comment->content }}</span>    
-                        </div>
-                    @endforeach
+                @foreach ($comments as $comment)
+                    <div class="comment" data-id="{{ $comment->id }}">
+                        <span class="author">{{ $comment->user->name }} : :&nbsp;</span>
+                        <span class="content">{{ $comment->content }}</span>    
+                    </div>
                 @endforeach
             </div>
         </div>
