@@ -3,12 +3,14 @@ Laravel 6. PHP 7. JavaScript. HTML. CSS.</br>
 MVC. SOLID. REST API. DRY.</br>
 ## About
 That's a Laravel demo app.</br>
-In brief, it's a responsive web page with a simple limited comment filter.</br>
-You can just start typing a name of comment author into the filter, a result is got imediately. A set of comments is already there.</br>
+In brief, it's a responsive web page with a simple limited comment filter.</br></br>
+You can just start typing a name of comment author into the filter, a result is got imediately.</br>
+A set of comments is already there.</br>
 ## What's inside
 - Eloquent ORM (related User and Comment models)
 - Database migrations and seeders
 - An API to extract user and comment data (using controllers)
+- A Blade template
 - Local query scopes, middleware
 - HTTP requests via JS, no web page reloading
 - A responsive web design of a web page
