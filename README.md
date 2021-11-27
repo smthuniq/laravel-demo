@@ -5,7 +5,6 @@ Russian: [русский перевод](docs/translations/readme/rus.md)
 Laravel 6. PHP 7. JavaScript. HTML. CSS.</br>
 MVC. SOLID. REST API. DRY.</br>
 ## About
-That's a Laravel demo app.</br>
 Briefly, it's a responsive web page with a simple limited comment filter.</br></br>
 You can just start typing a name of comment author into the filter, a result is got imediately.</br>
 A set of comments is already there.</br>
