@@ -1,6 +1,5 @@
+На английском: [English translation](/README.md)
 # Laravel демо-приложение
-## Переводы
-Английский: [English translation](/README.md)
 ## Стек технологий и методология
 Laravel 6. PHP 7. JavaScript. HTML. CSS.</br>
 MVC. SOLID. REST API. DRY.</br>

@@ -1,6 +1,5 @@
+In Russian: [русский перевод](docs/translations/readme/rus.md)
 # Laravel demo app
-## Translations
-Russian: [русский перевод](docs/translations/readme/rus.md)
 ## Tech stack and methods
 Laravel 6. PHP 7. JavaScript. HTML. CSS.</br>
 MVC. SOLID. REST API. DRY.</br>
