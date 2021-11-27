@@ -27,5 +27,5 @@ php artisan migrate
 composer dump-autoload
 php artisan db:seed
 ```
-## Note
+## Примечание
 Сделано с использованием Homestead v10.17.0.
